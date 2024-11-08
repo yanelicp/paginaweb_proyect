@@ -1,0 +1,88 @@
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #fbbb0e;
+    --secondary: #33211D;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #FFFBF2;
+    --dark: #111;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    
+}
+
+
+
+.btn-primary {
+    color: #212529;
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+  }
+  
+.btn-primary:hover {
+    color: #212529;
+    background-color: #d38d3c;
+    border-color: #d18731;
+  }
+  
+  .btn-primary:focus, .btn-primary.focus {
+    color: #212529;
+    background-color: #d38d3c;
+    border-color: #d18731;
+    box-shadow: 0 0 0 0.2rem rgba(190, 141, 84, 0.5);
+  }
+  
+  .btn-primary.disabled, .btn-primary:disabled {
+    color: #212529;
+    background-color: #DA9F5B;
+    border-color: #DA9F5B;
+  }
+  
+  .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+  .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #d18731;
+    border-color: #c8802d;
+  }
+  
+  .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(190, 141, 84, 0.5);
+  }
+
+  
+.form-control {
+    color: #495057;
+    background-color: #e2e1e1 !important; /* Forzar el color de fondo */
+}
+
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: var(--primary) !important; /* Cambia el color del borde */
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(218, 159, 91, 0.5) !important; /* Cambia el color de la sombra */
+}
+
+
+.fa-2x.text-primary {
+    color: var(--primary) !important;
+}
