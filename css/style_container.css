@@ -1,0 +1,77 @@
+.container {
+    flex:1;
+    flex-direction: column;
+    margin: 40px;
+}
+
+.rowcontainer {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.r1, .r2 {
+    flex: 1; /* Esto asigna el mismo espacio a cada elemento */
+    max-width: 50%; /* Limita cada elemento al 50% del ancho */
+    box-sizing: border-box; /* Asegura que el padding y borde no incrementen el ancho */
+    margin: 100px;
+}
+.r1 h2{
+    font-family: 'Amulya', sans-serif;
+    font-weight: bold;
+    
+    
+}
+
+.r1 p{
+    padding-top: 20px;
+    padding-right: 20px;
+    font-family: 'Amulya', sans-serif;
+    font-size: 16pt;
+    
+}
+
+.r2 {
+    padding-top: 10px;
+    margin-left: 50px;
+}
+
+.r2 img {
+    width: 100%;
+    height: auto;
+}
+
+.r1 {
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+/* Ejemplo con media query */
+@media (max-width: 768px) {
+    .rowcontainer {
+        flex: 1;
+        flex-direction: column;
+        display: flex;
+        margin: 70px 40px 70px 40px;
+    }
+    
+    .r1 {
+        flex: 1;
+        
+    }
+    
+    .r2 {
+        flex: 2;
+        margin-left: 100px;
+        margin-right: 0px;
+    }
+
+    .r1, .r2 {
+        flex: 1; /* Esto asigna el mismo espacio a cada elemento */
+        max-width: 100%; /* Limita cada elemento al 50% del ancho */
+        box-sizing: border-box; /* Asegura que el padding y borde no incrementen el ancho */
+        margin: 20px;
+    }
+
+}
