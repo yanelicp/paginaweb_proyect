@@ -69,36 +69,39 @@
                 <div class="col-md-6 pb-5">
                     <div class="contact-form">
                         <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <form action="https://formsubmit.co/feliscatusstore@gmail.com" method="POST">
                             <div class="control-group">
                                 <h5>Nombre</h5>
-                                <input type="text" class="form-control  p-3" id="name" 
+                                <input type="text" class="form-control  p-3" name="nombre" id="name" 
                                     required="required" data-validation-required-message="Por favor ingresa tu nombre" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
                                 <h5>Apellido</h5>
-                                <input type="text" class="form-control  p-3" id="lastname" 
+                                <input type="text" class="form-control  p-3" name="apellido" id="lastname" 
                                     required="required" data-validation-required-message="Por favor ingresa tu apellido" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
                                 <h5>Email</h5>
-                                <input type="email" class="form-control p-3" id="email" 
+                                <input type="email" class="form-control p-3" name="email" id="email" 
                                     required="required" data-validation-required-message="Por favor ingresa tu correo" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
                                 <h5>Mensaje</h5>
-                                <textarea class="form-control py-3 px-4" rows="5" id="message" 
+                                <textarea class="form-control py-3 px-4" rows="5" name="mensaje" id="message" 
                                     required="required"
                                     data-validation-required-message="Por favor ingresa tu mensaje"></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div>
-                                <button class="btn btn-primary font-weight-bold py-2 " type="submit" id="sendMessageButton" style="width:100%">
+                                <button class="btn btn-primary font-weight-bold py-2 " type="submit"  style="width:100%">
                                     Enviar</button>
                             </div>
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/contacto.html">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_subject" value="🟡⚪⚫ Nuevo mensaje de Contacto! 🟡⚪⚫">
                         </form>
                     </div>
                 </div>
@@ -109,15 +112,6 @@
 
     <!-- El div donde se cargará el footer -->
     <div id="footer-placeholder"></div>
-
-    <script>
-        fetch('../partials/footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("footer-placeholder").innerHTML = data;
-            })
-            .catch(error => console.error('Error al cargar el footer:', error));
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
