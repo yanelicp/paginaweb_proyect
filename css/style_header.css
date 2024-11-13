@@ -7,6 +7,91 @@
     flex-direction: column; 
     align-items: center;
 }
+.header-2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/img_n.jpg);   
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.header-inicio{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/img_inicio.png);
+    background-position: bottom;
+}
+.text-inicio1 {  
+    font-family: 'Montserrat', sans-serif;
+    color: #fbbb0e;
+    font-size: 24pt;
+    font-weight: 800;
+    text-align: left;
+    line-height: 1;
+}
+.text-inicio2 {  
+    text-align: left;
+    color: #ffffff;
+    font-size: 14pt;
+    font-family: 'Amulya-Light', sans-serif;
+    line-height: 1;
+}
+.subtitle-nosotros{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21pt;
+    font-weight: 800;
+    padding-bottom: 15px;
+
+}
+.subtitle-nosotros2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21pt;
+    font-weight: 800;
+    transition: font-size 0.3s ease;
+    
+}
+.parrafo-nosotros{
+    font-family: 'Amulya-Light', sans-serif;
+}
+.contac:hover .subtitle-nosotros2 {
+    font-size: 24pt; /* Tamaño del texto cuando se pasa el mouse sobre la sección */
+    transform: scale(1.1); 
+}
+
+.btn-contacto{
+    padding: 10px 20px;              
+    border: 2px solid white;        
+    background-color: transparent;   
+    color: white;                   
+    border-radius: 30px;             
+    cursor: pointer;                 
+    font-size: 16px;                 
+    transition: background-color 0.3s, color 0.3s; 
+    text-decoration: none;
+    font-size: 14pt;
+  }
+  .btn-contacto:hover{
+    background-color: white;        
+    color: black; 
+  }
+.text-nosotros1 {  
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 24pt;
+    font-weight: 800;
+    text-align: left;
+}
+.text-nosotros2 {  
+    text-align: left;
+    color: #ffffff;
+    font-size: 14pt;
+    font-family: 'Amulya-Light', sans-serif;
+  
+}
 
 
 .titulo-head {
@@ -20,4 +105,80 @@
     color: #fbbb0e;
     font-size: 20pt;
     font-weight: 400;
+}
+
+/* Estilo para la sección de Servicios */
+.servicios-section {
+    padding: 50px 0;
+}
+
+/* Título de la sección */
+.servicios-titulo h2 {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+
+.servicio {
+    position: relative;
+    height: 350px;
+    background-size: cover;
+    background-position: center center;
+    
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.servicio:hover {
+    transform: scale(1.05); /
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btn-servicio {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 20px; 
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-servicio:hover {
+    background-color: white; /* Fondo blanco al pasar el mouse */
+    color: black; /* Cambia el texto a negro */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .servicio {
+        height: 250px;
+    }
+}
+
+@media (max-width: 576px) {
+    .servicio {
+        height: 150px;
+    }
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'Amulya-Light';
+    src: url('../assets/fonts/Amulya-Light.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
