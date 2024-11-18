@@ -15,26 +15,25 @@
     flex: 1; /* Esto asigna el mismo espacio a cada elemento */
     max-width: 50%; /* Limita cada elemento al 50% del ancho */
     box-sizing: border-box; /* Asegura que el padding y borde no incrementen el ancho */
-    margin: 100px;
 }
 .r1 h2{
     font-family: 'Amulya', sans-serif;
     font-weight: bold;
+    padding-right: 20px;
+    font-size: 21pt;
     
     
 }
 
 .r1 p{
     padding-top: 20px;
-    padding-right: 20px;
-    font-family: 'Amulya', sans-serif;
-    font-size: 16pt;
+    font-family: 'Amulya-Light', sans-serif;
+    font-size: 14pt;
     
 }
 
 .r2 {
-    padding-top: 10px;
-    margin-left: 50px;
+    margin: 120px;
 }
 
 .r2 img {
@@ -43,8 +42,7 @@
 }
 
 .r1 {
-    margin-left: 100px;
-    margin-right: 50px;
+    margin: 100px 50px 100px 120px;
 }
 
 /* Ejemplo con media query */
