@@ -1,6 +1,7 @@
 /* Estilos para el encabezado */
 header {
     display: flex;
+    height: 90px;
     align-items: center;
     justify-content: space-between;
     position: fixed; /* Posición absoluta para que flote sobre el contenido */
@@ -14,7 +15,7 @@ body {
 }
 /* Estilo para el contenido */
 .content {
-    margin-top: 60px;  /* Espacio debajo del navbar (igual a la altura del navbar) */
+    margin-top: 80px;  /* Espacio debajo del navbar (igual a la altura del navbar) */
   }
 nav {
     display: flex;
