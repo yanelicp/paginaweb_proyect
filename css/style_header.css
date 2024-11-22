@@ -8,7 +8,7 @@
     align-items: center;
 }
 .header-2{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/portada-nosotros.jpg);   
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/portada-nosotros.png);   
     width: 100%;
     height: 680px;
     background-size: cover;
@@ -22,7 +22,7 @@
 }
 
 .header-inicio{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/img_inicio.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/portada-index.png);
     background-position: bottom;
 }
 .text-inicio1 {  
@@ -106,7 +106,7 @@
 }
 .text-nosotros2 {  
     text-align: left;
-    color: black;
+    color: white;
     font-size: 15pt;
     font-family: 'Amulya-Light', sans-serif;
   
