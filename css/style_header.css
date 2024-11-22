@@ -22,7 +22,7 @@
 }
 
 .header-inicio{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/portada-index.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/img_inicio.png);
     background-position: bottom;
 }
 .text-inicio1 {  
@@ -128,14 +128,15 @@
 
 /* Estilo para la sección de Servicios */
 .servicios-section {
-    padding: 50px 0;
+    padding: 140px 0;
+    
 }
 
 /* Título de la sección */
 .servicios-titulo h2 {
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 
@@ -186,6 +187,18 @@
 @media (max-width: 768px) {
     .servicio {
         height: 250px;
+    }
+
+    .servicios-section {
+        padding: 100px 0;
+        
+    }
+
+    /* Título de la sección */
+    .servicios-titulo h2 {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 50px;
     }
 }
 

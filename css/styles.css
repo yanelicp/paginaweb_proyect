@@ -3,15 +3,19 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: absolute; /* Posición absoluta para que flote sobre el contenido */
+    position: fixed; /* Posición absoluta para que flote sobre el contenido */
     width: 100%; /* Abarca todo el ancho de la pantalla */
     top: 0; /* Se coloca en la parte superior */
-    background-color: transparent; /* Fondo semitransparente */
-    z-index: 10; /* Asegura que el header esté sobre el contenido */
+    background-color: black; /* Fondo semitransparente */
+    z-index: 111; /* Asegura que el header esté sobre el contenido */
   }
 body {
     margin: 0;
 }
+/* Estilo para el contenido */
+.content {
+    margin-top: 60px;  /* Espacio debajo del navbar (igual a la altura del navbar) */
+  }
 nav {
     display: flex;
     gap: 5px;
@@ -21,8 +25,8 @@ nav {
 nav a {
     color: #fff;
     text-decoration: none;
-    padding: 25px;
-    margin: 5px;
+    padding: 15px;
+    margin: 15px;
 }
 header img {
     margin: 0;
@@ -32,6 +36,12 @@ header img {
 .hamburger {
     display: none; /* Oculta el icono del menú hamburguesa */
 }
+
+#nav-menu :hover {
+        background-color:#fbbb0e;
+        border-color: #fbbb0e;
+        border-radius: 10px;
+    }
 
 /* Ejemplo con media query */
 @media (max-width: 768px) {
@@ -58,8 +68,13 @@ header img {
         z-index: 1002;
       }
 
+    #nav-menu :hover {
+        background-color:#fbbb0e;
+        border-color: #fbbb0e;
+        border-radius: 10px;
+    }
     nav a {
-        padding: 5px;
+        padding: 5px 20px;
         margin: 5px;
     }
     
