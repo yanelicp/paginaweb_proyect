@@ -59,15 +59,16 @@
 }
 
 .r3 {
-    margin-left: 30px;
-    margin-right: 30px;
+    flex: 2;
+    max-width: 100%; /* Limita cada elemento al 50% del ancho */
+        box-sizing: border-box; /* Asegura que el padding y borde no incrementen el ancho */
+        margin: 20px;
     position: relative;
+    
 }
 
 .r3 img {
-    width: 200px;
-    height:auto;
-    display: block;
+    width: 100%;
 }
 
 .rowcontainer3 {
@@ -75,7 +76,7 @@
     flex: 1;
     flex-direction: row;
     justify-content: center;
-    margin: 30px 120px 120px 120px;
+    margin: 30px 150px 120px 150px;
 }
 
 .overlay {
@@ -83,7 +84,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Color negro semitransparente */
     display: flex;
     justify-content: center;
@@ -105,6 +105,13 @@
         display: flex;
         margin: 70px 40px 70px 40px;
     }
+
+    .rowcontainer3 {
+        flex: 1;
+        flex-direction: column;
+        display: flex;
+        margin: 70px 40px 70px 40px;
+    }
     
     .r1 {
         flex: 1;
@@ -117,7 +124,17 @@
         margin-right: 0px;
     }
 
-    .r1, .r2 {
+    .r3 {
+        flex: 2;
+        margin-left: 100px;
+        margin-right: 0px;
+    }
+
+    .r3 img {
+        width: 100%;
+    }
+
+    .r1, .r2, .r3 {
         flex: 1; /* Esto asigna el mismo espacio a cada elemento */
         max-width: 100%; /* Limita cada elemento al 50% del ancho */
         box-sizing: border-box; /* Asegura que el padding y borde no incrementen el ancho */
