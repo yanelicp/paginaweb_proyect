@@ -3,46 +3,87 @@
     flex-direction: column;
     margin: 40px;
 }
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 1600px;
+}
 
 .rowcontainer {
     display: flex;
-    flex: 1;
+    flex-direction: column; /* Alinea r1 y r2 en columna */
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    flex: 0 0 calc(50% - 40px); /* 50% menos márgenes */
+    margin: 20px;
+    box-shadow: 0px 0px 10px 0px #999;
+    height: 400px; /* Altura fija del rowcontainer */
+    text-align: center;
+    overflow: hidden;
+}
+
+.rowcontainer2 {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.r1, .r2 {
-    flex: 1; /* Esto asigna el mismo espacio a cada elemento */
-    max-width: 50%; /* Limita cada elemento al 50% del ancho */
-    box-sizing: border-box; /* Asegura que el padding y borde no incrementen el ancho */
-}
-.r1 h2{
-    font-family: 'Amulya', sans-serif;
-    font-weight: bold;
-    padding-right: 20px;
-    font-size: 21pt;
-    
-    
-}
-
-.r1 p{
-    padding-top: 20px;
-    font-family: 'Amulya-Light', sans-serif;
-    font-size: 14pt;
-    
+    width: 100%;
 }
 
 .r2 {
-    margin: 120px;
+    flex: 0 0 48%; /* Ocupa el 60% del alto del rowcontainer */
+    width: 100%; /* Asegura que ocupe el ancho completo */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+    position: relative; /* Para manejar imágenes perfectamente centradas */
 }
 
 .r2 img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+    height: 100%; /* Asegura que ocupe toda la altura disponible */
+    object-fit: cover; /* Ajusta la imagen dentro del espacio sin deformarla */
+    border-radius: 4px; /* Opcional: añade bordes redondeados */
 }
 
 .r1 {
-    margin: 100px 50px 100px 120px;
+    flex: 0 0 52%; /* Ocupa el 40% del alto del rowcontainer */
+    width: 100%; /* Asegura que use todo el ancho */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    padding-bottom: 0;
+    text-align: center;
+    overflow: hidden; /* Evita desbordamiento */
+}
+
+.r1 h2 {
+    font-family: 'Amulya', sans-serif;
+    font-weight: bold;
+    font-size: clamp(1.5rem, 2.5vw, 1.2rem); /* Tamaño responsivo del texto */
+    margin: 0.5rem 0;
+    text-align: center;
+    line-height: 1.2; /* Espaciado entre líneas */
+}
+
+.r1 p {
+    font-family: 'Amulya-Light', sans-serif;
+    font-size: clamp(0.9rem, 3vw, 1rem); /* Tamaño responsivo del texto */
+    margin: 0;
+    text-align: center;
+    line-height: 1.4; /* Espaciado entre líneas */
+    overflow: hidden; /* Evita desbordamiento */
+    text-overflow: ellipsis;
+    white-space: normal;
+    word-wrap: break-word;
 }
 
 .r4 {
@@ -100,7 +141,7 @@
 /* Ejemplo con media query */
 @media (max-width: 768px) {
     .rowcontainer {
-        flex: 1;
+        flex: 1 1 100%; /* Ocupa todo el ancho en dispositivos móviles */
         flex-direction: column;
         display: flex;
         margin: 70px 40px 70px 40px;
@@ -110,7 +151,11 @@
         flex: 1;
         flex-direction: column;
         display: flex;
-        margin: 70px 40px 70px 40px;
+        margin: 30px 40px 70px 40px;
+    }
+
+    .container2 {
+        margin: 10px; /* Ajusta márgenes generales */
     }
     
     .r1 {
@@ -122,23 +167,40 @@
         flex: 2;
         margin-left: 100px;
         margin-right: 0px;
+        margin-bottom: 0;
     }
 
     .r3 {
         flex: 2;
-        margin-left: 100px;
-        margin-right: 0px;
+        margin: 20px;
     }
 
     .r3 img {
         width: 100%;
     }
 
-    .r1, .r2, .r3 {
+     .r2 {
         flex: 1; /* Esto asigna el mismo espacio a cada elemento */
         max-width: 100%; /* Limita cada elemento al 50% del ancho */
         box-sizing: border-box; /* Asegura que el padding y borde no incrementen el ancho */
-        margin: 20px;
+        margin: 10px 20px;
     }
+
+    .r2 img {
+        height: 200px; /* Altura uniforme para imágenes */
+    }
+
+    .r1 {
+        justify-content: flex-start; /* Asegura que el texto se acomode arriba */
+        padding: 0.5rem;
+        height: auto; /* Elimina restricciones de altura */
+    }
+
+    .r1 h2, .r1 p {
+        padding-top: 0;
+        padding-bottom: 10px;
+        margin: 0; /* Elimina posibles márgenes o padding que afecten el flujo */
+    }
+
 
 }
