@@ -71,11 +71,13 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 21pt;
     font-weight: 800;
+    
     transition: font-size 0.3s ease;
     
 }
 .parrafo-nosotros{
     font-family: 'Amulya-Light', sans-serif;
+    text-align: justify;
 }
 .contac:hover .subtitle-nosotros2 {
     font-size: 24pt; /* Tamaño del texto cuando se pasa el mouse sobre la sección */
@@ -109,6 +111,7 @@
     text-align: left;
     color: white;
     font-size: 15pt;
+    text-align: justify;
     font-family: 'Amulya-Light', sans-serif;
   
 }
