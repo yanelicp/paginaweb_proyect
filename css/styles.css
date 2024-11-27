@@ -34,6 +34,21 @@ header img {
     padding: 20px 50px;
 }
 
+.btn-sabermás{
+        background-color:#fbbb0e;
+        border-color: #fbbb0e;
+        border-radius: 10px;
+        padding: 10px 20px;
+        color: #fff;
+        font-family: 'Amulya', sans-serif;
+        font-size: 15pt;
+        text-decoration: none;
+}
+.btn-sabermás:hover {
+    background-color: black; /* Fondo negro al pasar el mouse */
+    color: white; /* Cambia el texto a blanco */
+}
+
 .hamburger {
     display: none; /* Oculta el icono del menú hamburguesa */
 }

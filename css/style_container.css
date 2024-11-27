@@ -35,6 +35,12 @@
     justify-content: space-between;
     width: 100%;
 }
+.inicio-container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 .r2 {
     flex: 0 0 47%; /* Ocupa el 60% del alto del rowcontainer */
@@ -139,9 +145,31 @@
     font-weight: bold;
   }
 
+  @media (max-width: 980px) {
+    .inicio-section {
+        padding: 40px 0;
+        margin: 20px 40px;
+        
+    }
+
+    .inicio-container {
+        flex: 1 1 100%; /* Ocupa todo el ancho en dispositivos móviles */
+        flex-direction: column;
+        display: flex;
+        margin: 20px 40px 70px 40px;
+    }
+
+    .inicio-imagen, .inicio-titulo {
+        flex: 1; /* Esto asigna el mismo espacio a cada elemento */
+        max-width: 100%; /* Limita cada elemento al 50% del ancho */
+        box-sizing: border-box; /* Asegura que el padding y borde no incrementen el ancho */
+        margin: 10px 20px;
+    }
+}
+
 /* Ejemplo con media query */
 @media (max-width: 768px) {
-    .rowcontainer {
+    .rowcontainer, .inicio-container {
         flex: 1 1 100%; /* Ocupa todo el ancho en dispositivos móviles */
         flex-direction: column;
         display: flex;
@@ -155,7 +183,7 @@
         margin: 30px 40px 70px 40px;
     }
 
-    .container2 {
+    .container2, .inicio-container {
         margin: 10px; /* Ajusta márgenes generales */
     }
     
@@ -180,7 +208,7 @@
         width: 100%;
     }
 
-     .r2 {
+     .r2, .inicio-imagen, .inicio-titulo {
         flex: 1; /* Esto asigna el mismo espacio a cada elemento */
         max-width: 100%; /* Limita cada elemento al 50% del ancho */
         box-sizing: border-box; /* Asegura que el padding y borde no incrementen el ancho */
