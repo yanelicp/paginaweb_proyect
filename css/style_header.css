@@ -22,6 +22,21 @@
     margin-top: 70px;
 }
 
+.header-servicios{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/portada-nosotros2.jpeg);   
+    width: 100%;
+    height: 380px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 70px;
+}
+
 .header-inicio{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/img_inicio.png);
     background-position: bottom;
@@ -105,6 +120,14 @@
     font-weight: 800;
     text-align: left;
 }
+.text-servicios1 {  
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26pt;
+    font-weight: 800;
+    text-align: left;
+}
 .text-nosotros2 {  
     text-align: left;
     color: white;
@@ -129,7 +152,12 @@
 
 /* Estilo para la sección de Servicios */
 .servicios-section {
-    padding: 130px 0;
+    padding: 60px 0 80px 0;
+    
+}
+
+.inicio-section {
+    padding: 80px 0;
     
 }
 
@@ -141,9 +169,10 @@
 }
 
 
+
 .servicio {
     position: relative;
-    height: 450px;
+    height: 420px;
     background-size: cover;
     background-position: center center;
     

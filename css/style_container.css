@@ -9,7 +9,7 @@
     margin: 60px auto;
     justify-content: center;
     align-items: center;
-    max-width: 1600px;
+    max-width: 1000px;
 }
 
 .rowcontainer {
@@ -24,7 +24,7 @@
     flex: 0 0 calc(50% - 40px); /* 50% menos márgenes */
     margin: 20px;
     box-shadow: 0px 0px 10px 0px #999;
-    height: 400px; /* Altura fija del rowcontainer */
+    height: 430px; /* Altura fija del rowcontainer */
     text-align: center;
     overflow: hidden;
 }
@@ -37,7 +37,7 @@
 }
 
 .r2 {
-    flex: 0 0 48%; /* Ocupa el 60% del alto del rowcontainer */
+    flex: 0 0 47%; /* Ocupa el 60% del alto del rowcontainer */
     width: 100%; /* Asegura que ocupe el ancho completo */
     display: flex;
     justify-content: center; /* Centra horizontalmente */
@@ -54,9 +54,10 @@
 }
 
 .r1 {
-    flex: 0 0 52%; /* Ocupa el 40% del alto del rowcontainer */
+    flex: 0 0 53%; /* Ocupa el 40% del alto del rowcontainer */
     width: 100%; /* Asegura que use todo el ancho */
     display: flex;
+    height: auto;
     flex-direction: column;
     align-items: center;
     padding: 0.5rem;
@@ -103,7 +104,7 @@
     flex: 2;
     max-width: 100%; /* Limita cada elemento al 50% del ancho */
         box-sizing: border-box; /* Asegura que el padding y borde no incrementen el ancho */
-        margin: 20px;
+        margin: 15px;
     position: relative;
     
 }
@@ -117,7 +118,7 @@
     flex: 1;
     flex-direction: row;
     justify-content: center;
-    margin: 30px 150px 120px 150px;
+    margin: 30px 60px 120px 60px;
 }
 
 .overlay {
