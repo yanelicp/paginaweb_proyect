@@ -185,7 +185,7 @@
 .inicio-titulo h2 {
     font-size: 22pt;
     font-family: sans-serif;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .inicio-titulo p {
     font-style: italic;
@@ -194,7 +194,6 @@
     font-weight: 300;
     font-size: 19px;
     text-align: justify;
-    color: #999;
     margin-bottom: 40px;
 }
 
