@@ -184,18 +184,17 @@
 
 .inicio-titulo h2 {
     font-size: 22pt;
-    font-family: 'Amulya-Light', sans-serif;
-    margin-bottom: 30px;
+    font-family: sans-serif;
+    margin-bottom: 20px;
 }
 .inicio-titulo p {
     font-style: italic;
-    font-family: 'Amulya-Light', sans-serif;
-    line-height: 32px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 30px;
     font-weight: 300;
-    font-size: 14pt;
+    font-size: 19px;
     text-align: justify;
     color: #999;
-    unicode-bidi: isolate;
     margin-bottom: 40px;
 }
 
