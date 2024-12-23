@@ -74,7 +74,7 @@
                 <div class="col-md-6 pb-5">
                     <div class="contact-form">
                         <div id="success"></div>
-                        <form action="https://formsubmit.co/feliscatusstore@gmail.com" method="POST">
+                        <form action="https://formsubmit.co/victor.apaclla@apaudit.com.pe" method="POST">
                             <div class="control-group">
                                 <h5>Nombre</h5>
                                 <input type="text" class="form-control  p-3" name="nombre" id="name" 
@@ -104,10 +104,13 @@
                                 <button class="btn btn-primary font-weight-bold py-2 " type="submit"  style="width:100%">
                                     Enviar</button>
                             </div>
-                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/contacto.html">
+                            <input type="hidden" name="_next" value="" id="nextUrl">
                             <input type="hidden" name="_captcha" value="false">
                             <input type="hidden" name="_subject" value="🟡⚪⚫ Nuevo mensaje de Contacto! 🟡⚪⚫">
                         </form>
+                        <script>
+                            document.getElementById('nextUrl').value = window.location.href;
+                        </script>
                     </div>
                 </div>
             </div>
